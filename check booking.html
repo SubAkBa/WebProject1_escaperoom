@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>웹프로젝트</title>
+    <link rel="stylesheet" href="css/check booking.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/check booking.js">
+    </script>
+</head>
+<body>
+    <header>
+        <a href="main_display.html"><img id="logotype" src="images/main_logo.JPG" alt="메인로고"></a>
+        <ul>
+            <li><a href="reason.html">reason</a></li>
+            <li><a href="notice.html">notice</a></li>
+            <li><a href="rooms.html">rooms</a></li>
+            <li><a href="booking.html">booking</a></li>
+            <li><a href="check booking.html">check booking</a></li>
+            <li><a href="q&a.php">q&a</a></li>
+        </ul>
+    </header>
+    <section>
+        <div id="sectionpart">
+            <h2>예약확인 <span id="smalltext">(check booking)</span></h2>
+            <form action="checkbooking.php" method="post" id="checkform">
+                <table cellspacing="0">
+                    <colgroup>
+                        <col width="20%">
+                        <col width="80%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>예약자명</th>
+                            <td><input type="text" name="guestname" id="user_name" class="inputtype" autocomplete="off" value="" autofocus></td>
+                        </tr>
+                        <tr>
+                            <th>연락처</th>
+                            <td>
+                                <select name="guestphonenumber1" class="selecttype1">
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                    <option value="019">019</option>
+                                </select>
+                                <input type="text" name="guestphonenumber2" autocomplete="off" maxlength="4" id="user_p1" class="inputtype" value="">
+                                <input type="text" name="guestphonenumber3" autocomplete="off" maxlength="4" id="user_p2" class="inputtype" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>예약번호</th>
+                            <td><input type="text" name="guestnumber" autocomplete="off" maxlength="8" id="user_booknum" class="inputtype" value=""><span style="font-size:small; font-family:none"> (예약번호는 핸드폰 번호 뒤8자리)</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td class="tablebottom"></td>
+                        <td class="tablebottom">
+                            <input type="hidden" name="namedata" id="guestname" value="">
+                            <input type="hidden" name="bookdata" id="bookingnumber" value="">
+                            <input type="submit" value="예약확인" class="buttontype">
+                            <input type="button" onclick="reloading();" value="취소" class="buttontype">
+                        </td>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>주소 : 공주대학교 천안공과대학 8층</li>
+            <li>대표 : 손원주</li>
+            <li>전화번호 : 010-5157-9214</li>
+            <li>이메일 : sonwonjoo@naver.com</li>
+            <li>Copyright ⓒ REASON All Right Reserved</li>
+        </ul>
+    </footer>
+</body>
+</html>

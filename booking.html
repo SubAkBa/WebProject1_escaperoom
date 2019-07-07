@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>웹프로젝트</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/booking.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="main_display.html"><img id="logotype" src="images/main_logo.JPG" alt="메인로고"></a>
+            <ul>
+                <li><a href="reason.html">reason</a></li>
+                <li><a href="notice.html">notice</a></li>
+                <li><a href="rooms.html">rooms</a></li>
+                <li><a href="booking.html">booking</a></li>
+                <li><a href="check booking.html">check booking</a></li>
+                <li><a href="q&a.php">q&a</a></li>
+            </ul>
+        </header>
+        <section>
+            <div id="firstarticle">
+                <h2>예약하기 <span id="smalltext">(booking)</span></h2>
+                <img src="images/booking_picture.gif">
+            </div>
+            <div id="secondarticle">
+                <form action="booking2.php" method="post" id="bookform">
+                    <table cellspacing="0">
+                        <colgroup>
+                            <col width="25%">
+                            <col width="50%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <th class="borderright">날짜</th>
+                            <th class="borderright">테마</th>
+                            <th>시간</th>
+                        </tr>
+                        <tr>
+                            <td class="borderright"><input type="date" value="" id="bookdate"></td>
+                            <td class="borderright">
+                                <ul id="themalist">
+                                    <li>
+                                        <p id="imglist"><img src="images/booking_picture0.JPG" width="230px"></p>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture1.jpg" id="0">다크나이트</a>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture2.jpg" id="1">컨저링1</a>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture3.jpg" id="2">쏘우</a>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture4.jpg" id="3">트라이앵글</a>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture5.jpg" id="4">28주후</a>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture6.JPG" id="5">셜록홈즈</a>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture7.jpg" id="6">투모로우</a>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture8.jpg" id="7">컨저링2</a>
+                                    </li>
+                                    <li>
+                                        <a href="images/booking_picture9.jpg" id="8">다크나이트라이즈</a>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul id="timelist">
+                                    <li><a href="#" id="0">10:30</a></li>
+                                    <li><a href="#" id="1">11:50</a></li>
+                                    <li><a href="#" id="2">13:10</a></li>
+                                    <li><a href="#" id="3">14:30</a></li>
+                                    <li><a href="#" id="4">15:50</a></li>
+                                    <li><a href="#" id="5">17:10</a></li>
+                                    <li><a href="#" id="6">18:30</a></li>
+                                    <li><a href="#" id="7">19:50</a></li>
+                                    <li><a href="#" id="8">21:10</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="hidden" id="datetext" name="date" value="">
+                                <input type="hidden" id="thematext" name="thema" value="테마">
+                                <input type="hidden" id="timetext" name="time" value="시간">
+                                <input type="submit" class="buttontype" value="다음으로">
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>주소 : 공주대학교 천안공과대학 8층</li>
+                <li>대표 : 손원주</li>
+                <li>전화번호 : 010-5157-9214</li>
+                <li>이메일 : sonwonjoo@naver.com</li>
+                <li>Copyright ⓒ REASON All Right Reserved</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
